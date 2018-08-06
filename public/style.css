@@ -1,0 +1,30 @@
+body {
+  color: #000000;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: none;
+}
+
+ul {
+  font-size: 140%;
+  list-style-type: none;
+  text-align: center;
+  margin: 70;
+  padding: 0;
+}
+
+li a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.align {
+  max-width:600px;
+  margin: auto;
+  clear: left;
+}
