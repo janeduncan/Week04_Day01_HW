@@ -1,32 +1,32 @@
 class Game
 
-  def initialize(hand1, hand2)
-    @hand1 = hand1
-    @hand2 = hand2
+  def initialize(player1, player2)
+    @player1 = player1
+    @player2 = player2
   end
 
   def play()
-    if @hand1 == @hand2
+    if @player1 == @player2
       result = "It's a tie! You're both losers!"
 
-    elsif @hand1 == "rock"
-      if @hand2 == "scissors"
+    elsif @player1 == "rock"
+      if @player2 == "scissors"
         result = "Rock crushes scissors! Player 1 wins!"
-      elsif @hand2 == "paper"
+      elsif @player2 == "paper"
         result = "Paper covers rock! Player 2 wins!"
       end
 
-    elsif @hand1 == "scissors"
-      if @hand2 == "rock"
+    elsif @player1 == "scissors"
+      if @player2 == "rock"
         result = "Rock crushes scissors! Player 2 wins!"
-      elsif @hand2 == "paper"
+      elsif @player2 == "paper"
         result = "Scissors cuts paper! Player 1 wins!"
       end
 
-    elsif @hand1 == "paper"
-      if @hand2 == "scissors"
+    elsif @player1 == "paper"
+      if @player2 == "scissors"
         result = "Scissors cuts paper! Player 2 wins!"
-      elsif @hand2 == "rock"
+      elsif @player2 == "rock"
         result = "Paper covers rock! Player 1 wins!"
       end
     end
